@@ -1,8 +1,8 @@
 country:
-  default: CA
+  default: ''
 first_day: 0
 timezone:
-  default: America/Toronto
+  default: UTC
   user:
     configurable: true
     warn: false
