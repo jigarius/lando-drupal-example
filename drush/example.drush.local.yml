@@ -1,0 +1,4 @@
+# Drush configuration for local dev env.
+# Copy this file to drush.local.yml to use it.
+options:
+  uri: "http://lando-d8.lndo.site"
