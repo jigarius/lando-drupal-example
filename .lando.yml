@@ -32,6 +32,13 @@ services:
     extras:
       - apt update -y
       - apt install vim -y
+
+  # Mailhog configuration.
+  mailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver
 tooling:
   # You can use drush from the host like "lando drush status" and so on.
   # If your drush installation is not in the "vendor" directory in your
@@ -39,4 +46,3 @@ tooling:
   # drush:
     # service: appserver
     # cmd: /path/to/my/drush
-
