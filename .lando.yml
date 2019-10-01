@@ -28,6 +28,10 @@ services:
     build:
       # Run "composer install" automatically before app starts.
       - cd $LANDO_MOUNT && composer install
+    # Additional provisioning commands can be added to "extras".
+    extras:
+      - apt update -y
+      - apt install vim -y
 tooling:
   # You can use drush from the host like "lando drush status" and so on.
   # If your drush installation is not in the "vendor" directory in your
