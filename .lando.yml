@@ -2,3 +2,30 @@ name: lando-d8
 recipe: drupal8
 config:
   webroot: web
+  # Define the PHP version (optional).
+  php: '7.3'
+  # Define web server (optional).
+  # Remove the ":1.14" part to use the latest version.
+  via: 'nginx:1.14'
+  # Define database server (optional).
+  database: 'mariadb:10.1'
+  # Define drush version.
+  # Use the latest version with '*'.
+  drush: ^9
+  # Enable or disable xdebug.
+  xdebug: false
+  # Use "config" to extend or override service config.
+  config:
+    # Database config overrides can be used for configuring things like
+    # collation, charset, etc.
+    # database: lando/my.cnf
+    php: lando/php.ini
+    # server: lando/server.conf
+    # vhosts: lando/default.conf
+tooling:
+  # You can use drush from the host like "lando drush status" and so on.
+  # If your drush installation is not in the "vendor" directory in your
+  # project's root, you can set the path to your drush installation as follows.
+  # drush:
+    # service: appserver
+    # cmd: /path/to/my/drush

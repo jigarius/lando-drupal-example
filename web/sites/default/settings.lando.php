@@ -12,7 +12,8 @@
 /**
  * Prepare a LANDO_INFO constant.
  *
- * Contains info which you can see using the "lando info" command.
+ * Contains info which you can see using the "lando info" command. Use the
+ * values in this constant to connect to the right Lando services.
  */
 if (!defined('LANDO_INFO') && isset($_ENV['LANDO_INFO'])) {
   define('LANDO_INFO', json_decode($_ENV['LANDO_INFO'], TRUE));
@@ -25,7 +26,8 @@ if (defined('LANDO_INFO')) {
 
   // Databases.
   $databases['default']['default'] = [
-    'driver' => LANDO_INFO['database']['type'],
+    // Since "mariadb" drivers are the same as "mysql", we hard-code "mysql".
+    'driver' => 'mysql',
     'database' => LANDO_INFO['database']['creds']['database'],
     'username' => LANDO_INFO['database']['creds']['user'],
     'password' => LANDO_INFO['database']['creds']['password'],
