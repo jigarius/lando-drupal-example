@@ -22,6 +22,12 @@ config:
     php: lando/php.ini
     # server: lando/server.conf
     # vhosts: lando/default.conf
+services:
+  # This is the service that contains your application's code.
+  appserver:
+    build:
+      # Run "composer install" automatically before app starts.
+      - cd $LANDO_MOUNT && composer install
 tooling:
   # You can use drush from the host like "lando drush status" and so on.
   # If your drush installation is not in the "vendor" directory in your
@@ -29,3 +35,4 @@ tooling:
   # drush:
     # service: appserver
     # cmd: /path/to/my/drush
+
