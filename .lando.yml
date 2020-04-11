@@ -26,8 +26,8 @@ services:
   # This is the service that contains your application's code.
   appserver:
     build:
-      # Run "composer install" automatically before app starts.
-      - cd $LANDO_MOUNT && composer install
+      # Run "composer install" automatically during build.
+      - composer install
     # Additional provisioning commands can be added to "extras".
     extras:
       - apt update -y
