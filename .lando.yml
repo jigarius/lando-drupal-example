@@ -39,6 +39,9 @@ services:
     portforward: true
     hogfrom:
       - appserver
+proxy:
+  mailhog:
+    - mail.example.lndo.site
 tooling:
   # You can use drush from the host like "lando drush status" and so on.
   # If your drush installation is not in the "vendor" directory in your
