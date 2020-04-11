@@ -1,4 +1,4 @@
-name: lando-d8
+name: lando-drupal
 recipe: drupal8
 config:
   webroot: web
