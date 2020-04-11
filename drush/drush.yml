@@ -2,4 +2,4 @@
 drush:
   paths:
     config:
-      - drush/drush.local.yml
+      - web/sites/default/drush.local.yml

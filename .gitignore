@@ -9,7 +9,7 @@
 
 # Local config.
 /web/sites/*/settings.local.php
-/drush/drush.local.yml
+/web/sites/default/drush.local.yml
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
