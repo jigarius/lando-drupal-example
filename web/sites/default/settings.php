@@ -251,7 +251,9 @@ $databases = [];
  *   ];
  * @endcode
  */
-$config_directories = [];
+$config_directories = [
+  CONFIG_SYNC_DIRECTORY => '../config/sync',
+];
 
 /**
  * Settings:
@@ -776,6 +778,4 @@ $settings['entity_update_backup'] = TRUE;
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-
-// Config directories.
-$config_directories['sync'] = '../config/sync';
+$settings['install_profile'] = 'standard';
