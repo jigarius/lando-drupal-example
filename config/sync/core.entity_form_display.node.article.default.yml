@@ -1,19 +1,21 @@
-uuid: cdb97a43-8b39-4ad6-a15e-560bb61541bf
+uuid: 9af05ea6-ed00-4587-b09e-c0cb9e72d780
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
+    - comment
     - image
     - path
     - text
 _core:
-  default_config_hash: vPb_yvhA-xuNoV_yOmOwYxGuHNRIH1CoMK2qi7BSga0
+  default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
 targetEntityType: node
 bundle: article
@@ -27,6 +29,13 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 20
+    region: content
+    settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
@@ -48,6 +57,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -92,6 +102,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
