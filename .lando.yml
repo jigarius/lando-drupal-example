@@ -1,17 +1,17 @@
 name: lando-drupal
-recipe: drupal8
+recipe: drupal9
 config:
   webroot: web
   # Define the PHP version (optional).
-  php: '7.3'
+  php: '7.4'
   # Define web server (optional).
-  # Remove the ":1.14" part to use the latest version.
-  via: 'nginx:1.14'
+  # Specify a version like "nginx:1.14".
+  via: 'nginx'
   # Define database server (optional).
-  database: 'mariadb:10.1'
+  database: 'mariadb'
   # Define drush version.
   # Use the latest version with '*'.
-  drush: ^9
+  drush: ^10
   # Enable or disable xdebug.
   xdebug: false
   # Use "config" to extend or override service config.
