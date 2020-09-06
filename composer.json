@@ -21,7 +21,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
-        "drupal/core-recommended": "^9",
+        "drupal/core-recommended": "9.0.5",
         "drush/drush": "^10",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
