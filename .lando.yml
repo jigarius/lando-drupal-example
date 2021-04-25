@@ -3,7 +3,7 @@ recipe: drupal9
 config:
   webroot: web
   # Define the PHP version (optional).
-  php: '7.4'
+  php: '8.0'
   composer_version: 2-latest
   # Define web server (optional).
   # Specify a version like "nginx:1.14".
