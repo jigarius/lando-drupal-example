@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70bebc87fdd91109697ba56e76745c37",
+    "content-hash": "d87bfce5f1fee02a40c10f9b37af89d4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1657,6 +1657,47 @@
                 "source": "https://github.com/drupal/core-recommended/tree/9.2.5"
             },
             "time": "2021-09-01T21:51:44+00:00"
+        },
+        {
+            "name": "drupal/core-vendor-hardening",
+            "version": "9.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-vendor-hardening.git",
+                "reference": "f9eaafd58792fef38037979c2344a9216a93cc7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/f9eaafd58792fef38037979c2344a9216a93cc7e",
+                "reference": "f9eaafd58792fef38037979c2344a9216a93cc7e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2",
+                "php": ">=7.3.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Drupal\\Composer\\Plugin\\VendorHardening\\VendorHardeningPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\Composer\\Plugin\\VendorHardening\\": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Hardens the vendor directory for when it's in the docroot.",
+            "homepage": "https://www.drupal.org/project/drupal",
+            "keywords": [
+                "drupal"
+            ],
+            "support": {
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/9.2.5"
+            },
+            "time": "2021-04-22T15:46:23+00:00"
         },
         {
             "name": "drush/drush",

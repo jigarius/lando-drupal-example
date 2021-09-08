@@ -21,6 +21,7 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.7",
         "drupal/core-recommended": "9.2.5",
+        "drupal/core-vendor-hardening": "^9.2",
         "drush/drush": "^10",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
