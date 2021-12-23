@@ -28,3 +28,7 @@
 
 # Ignore IDE files.
 .idea
+
+# Since this is just an example project, we don't want security warnings
+# for locked versions of packages.
+composer.lock
